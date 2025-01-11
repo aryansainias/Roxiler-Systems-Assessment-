@@ -8,7 +8,7 @@ const Dashboard = () => {
 
         <TransactionTable/>
     </div>
-  )
+   )
 }
 
 export default Dashboard
