@@ -1,0 +1,115 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+.Statistics-comp {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Statistics-comp h1 {
+    text-align: center;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.statistics-month-picker-div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.statistics-month-picker-div legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.statistics-month-picker {
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    font-size: 1em;
+    color: #495057;
+}
+
+.statistics-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-bg {
+    background-color: #17a2b8 !important;
+    color: white !important;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.stat-bg .card-title {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.stat-bg .list-group-item {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+.stat-bg .list-group-item:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .statistics-month-picker-div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .statistics-month-picker {
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .stat-bg {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .stat-bg .card-title {
+        font-size: 1.2em;
+    }
+
+    .stat-bg .list-group-item {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .stat-bg {
+        padding: 10px;
+    }
+
+    .stat-bg .card-title {
+        font-size: 1em;
+    }
+
+    .stat-bg .list-group-item {
+        font-size: 0.9em;
+    }
+}
