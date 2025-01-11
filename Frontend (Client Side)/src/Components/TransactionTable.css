@@ -1,0 +1,174 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.search-select-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.searchbar-div,
+.month-picker-div {
+    margin: 10px 0;
+}
+
+.searchbar {
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+.search-btn {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #218838;
+}
+
+.month-picker-label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.month-picker {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+.TransactionTable-comp {
+    margin: 20px;
+}
+
+.tables {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+    color: #333;
+    border: 1px solid #dee2e6;
+}
+
+.tables th,
+.tables td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #dee2e6;
+}
+
+.tables th {
+    background-color: #f8f9fa;
+    color: #495057;
+}
+
+.tables tr:nth-child(even) {
+    background-color: #e9ecef;
+}
+
+.transaction-img img {
+    width: 50px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .search-select-div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .searchbar {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .search-btn {
+        width: 100%;
+        margin: 0;
+    }
+
+    .month-picker-div {
+        width: 100%;
+    }
+
+    .month-picker {
+        width: 100%;
+    }
+
+    .tables {
+        font-size: 12px;
+    }
+
+    .tables th,
+    .tables td {
+        padding: 8px;
+    }
+
+    /* Hide certain columns on small screens */
+    .tables th:nth-child(1),
+    .tables td:nth-child(1), /* ID */
+    .tables th:nth-child(3),
+    .tables td:nth-child(3), /* Description */
+    .tables th:nth-child(5),
+    .tables td:nth-child(5), /* Category */
+    .tables th:nth-child(6),
+    .tables td:nth-child(6) { /* Sold */
+        display: none;
+    }
+
+    .tables th:nth-child(2),
+    .tables td:nth-child(2), /* Title */
+    .tables th:nth-child(4),
+    .tables td:nth-child(4), /* Price */
+    .tables th:nth-child(7),
+    .tables td:nth-child(7) { /* Image */
+        display: table-cell;
+    }
+}
+
+@media (max-width: 480px) {
+    .tables {
+        font-size: 10px;
+    }
+
+    .tables th,
+    .tables td {
+        padding: 5px;
+    }
+
+    .tables th:nth-child(1),
+    .tables td:nth-child(1), /* ID */
+    .tables th:nth-child(3),
+    .tables td:nth-child(3), /* Description */
+    .tables th:nth-child(5),
+    .tables td:nth-child(5), /* Category */
+    .tables th:nth-child(6),
+    .tables td:nth-child(6) { /* Sold */
+        display: none;
+    }
+
+    .tables th:nth-child(2),
+    .tables td:nth-child(2), /* Title */
+    .tables th:nth-child(4),
+    .tables td:nth-child(4), /* Price */
+    .tables th:nth-child(7),
+    .tables td:nth-child(7) { /* Image */
+        display: table-cell;
+    }
+}
